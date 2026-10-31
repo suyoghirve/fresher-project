@@ -1,0 +1,27 @@
+# Python virtual environments
+venv/
+.venv/
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+
+# Local cache
+.cache/
+
+# Runtime logs and generated reports
+logs/
+reports/
+*.log
+*.log.*
+sys_report.json
+www/report.html
+
+# Backup files
+*.bak
+
+# Local environment and credentials
+.env
+.env.*
+*.pem
+*.key
