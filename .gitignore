@@ -1,27 +1,104 @@
-# Python virtual environments
-venv/
-.venv/
-
-# Python cache and bytecode
+# ==========================================
+# Python
+# ==========================================
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
 
-# Local cache
-.cache/
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
 
-# Runtime logs and generated reports
+# Python testing and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# ==========================================
+# Logs, reports and runtime data
+# ==========================================
 logs/
 reports/
 *.log
 *.log.*
+*.log.*.gz
 sys_report.json
 www/report.html
 
-# Backup files
-*.bak
-
-# Local environment and credentials
+# ==========================================
+# Environment variables and secrets
+# ==========================================
 .env
 .env.*
+!.env.example
 *.pem
 *.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+secrets/
+credentials/
+.aws/
+.ssh/
+
+# ==========================================
+# Terraform
+# ==========================================
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# ==========================================
+# Node.js
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ==========================================
+# IDE and editor files
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==========================================
+# Operating system files
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# Backup and temporary files
+# ==========================================
+*.bak
+*.tmp
+*.temp
+*.old
+
+# Local cache
+.cache/
